@@ -45,6 +45,15 @@
 		autoplay: true,
 	})
 
+	$('.product-active').owlCarousel({
+		items: 4,
+		margin: 30,
+		loop: true,
+		navText: ['Back', 'Next'],
+		nav: true,
+		autoplay: true,
+	})
+
 
 	/* magnificPopup img view */
 	$('.popup-image').magnificPopup({

@@ -35,6 +35,17 @@
 		}
 	});
 
+	// slider
+
+	$('.slider-active').owlCarousel({
+		items: 1,
+		loop: true,
+		navText: ['Back', 'Next'],
+		nav: true,
+		autoplay: true,
+	})
+
+
 	/* magnificPopup img view */
 	$('.popup-image').magnificPopup({
 		type: 'image',

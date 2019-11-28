@@ -51,7 +51,6 @@
 		loop: true,
 		navText: ['Back', 'Next'],
 		nav: true,
-		autoplay: true,
 	})
 
 
@@ -102,7 +101,7 @@
 		animation: 'fade', // Fade, slide, none
 		animationInSpeed: 200, // Animation in speed (ms)
 		animationOutSpeed: 200, // Animation out speed (ms)
-		scrollText: '<i class="fa fa-arrow-up"></i>', // Text for element
+		scrollText: '<i class="fa fa-angle-up"></i>', // Text for element
 		activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
 	});
 
@@ -114,7 +113,7 @@
 
 	$('.brand-active').owlCarousel({
 		loop: true,
-		margin: 30,
+		margin: 80,
 		nav: false,
 		autoplay: true,
 		responsive: {
@@ -125,10 +124,10 @@
 				items: 2
 			},
 			767: {
-				items: 3
+				items: 4
 			},
 			1000: {
-				items: 4
+				items: 6
 			}
 		}
 	})

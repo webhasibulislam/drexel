@@ -25,40 +25,133 @@
 </head>
 
 <body>
-    <!-- loader -->
+    <!-- preloder start -->
     <div id="loading">
         <div id="loading-center">
             <div id="loading-center-absolute">
-                <div id="object"></div>
+                <div class="object" id="object_one"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_three"></div>
             </div>
         </div>
     </div>
-    <!-- loader end -->
+    <!-- preloder end -->
 
     <!-- header start -->
     <header>
         <!-- menu section start -->
-            <section class="header-section d-flex align-items-center">
-                <div class="container pos-relative">
-                    <div class="row align-items-center">
-                        <div class="col-xl-5 static">
-                            <div class="main-menu">
-                                <nav>
-                                    <ul>
-                                        <li><a href="#">Home <i class="fas fa-angle-down"></i></a>
+        <section class="header-section header-sticky d-flex align-items-center">
+            <div class="container pos-relative">
+                <div class="row align-items-center">
+                    <div class="col-xl-5 col-md-2 static d-block d-xl-block d-lg-none">
+                        <div class="main-menu d-none d-xl-block">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Home <i class="fas fa-angle-down"></i></a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Home style 1</a></li>
+                                            <li><a href="#">Home style 2</a>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Home style 1</a></li>
+                                                    <li><a href="#">Home style 2</a>
+                                                        <ul class="submenu">
+                                                            <li><a href="#">Home style 1</a></li>
+                                                            <li><a href="#">Home style 2</a></li>
+                                                            <li><a href="#">Home style 3</a></li>
+                                                            <li><a href="#">Home style 4</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#">Home style 3</a></li>
+                                                    <li><a href="#">Home style 4</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Home style 3</a></li>
+                                            <li><a href="#">Home style 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Feature <i class="fas fa-angle-down"></i></a>
+                                        <div class="mega-menu">
+                                            <ul class="mega-links">
+                                                <span class="mega-title">Mega Menu Title</span>
+                                                <li><a href="#">mega item 1</a></li>
+                                                <li><a href="#">mega item 2</a></li>
+                                                <li><a href="#">mega item 3</a></li>
+                                                <li><a href="#">mega item 4</a></li>
+                                                <li><a href="#">mega item 5</a></li>
+                                            </ul>
+                                            <ul class="mega-links">
+                                                <span class="mega-title">Mega Menu Title</span>
+                                                <li><a href="#">mega item 1</a></li>
+                                                <li><a href="#">mega item 2</a></li>
+                                                <li><a href="#">mega item 3</a></li>
+                                                <li><a href="#">mega item 4</a></li>
+                                                <li><a href="#">mega item 5</a></li>
+                                            </ul>
+                                            <ul class="mega-links">
+                                                <span class="mega-title">Mega Menu Title</span>
+                                                <li><a href="#">mega item 1</a></li>
+                                                <li><a href="#">mega item 2</a></li>
+                                                <li><a href="#">mega item 3</a></li>
+                                                <li><a href="#">mega item 4</a></li>
+                                                <li><a href="#">mega item 5</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="static"><a href="#">Blogs <i class="fas fa-angle-down"></i></a>
+
+                                        <div class="mega-menu full-mega">
+                                            <ul class="mega-links">
+                                                <span class="mega-title">Mega Menu Title</span>
+                                                <li><a href="#">mega item 1</a></li>
+                                                <li><a href="#">mega item 2</a></li>
+                                                <li><a href="#">mega item 3</a></li>
+                                                <li><a href="#">mega item 4</a></li>
+                                                <li><a href="#">mega item 5</a></li>
+                                            </ul>
+                                            <ul class="mega-links">
+                                                <span class="mega-title">Mega Menu Title</span>
+                                                <li><a href="#">mega item 1</a></li>
+                                                <li><a href="#">mega item 2</a></li>
+                                                <li><a href="#">mega item 3</a></li>
+                                                <li><a href="#">mega item 4</a></li>
+                                                <li><a href="#">mega item 5</a></li>
+                                            </ul>
+                                            <ul class="mega-links">
+                                                <span class="mega-title">Mega Menu Title</span>
+                                                <li><a href="#">mega item 1</a></li>
+                                                <li><a href="#">mega item 2</a></li>
+                                                <li><a href="#">mega item 3</a></li>
+                                                <li><a href="#">mega item 4</a></li>
+                                                <li><a href="#">mega item 5</a></li>
+                                            </ul>
+                                            <ul class="mega-links">
+                                                <span class="mega-title">Mega Menu Title</span>
+                                                <li><a href="#">mega item 1</a></li>
+                                                <li><a href="#">mega item 2</a></li>
+                                                <li><a href="#">mega item 3</a></li>
+                                                <li><a href="#">mega item 4</a></li>
+                                                <li><a href="#">mega item 5</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#"> About Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <!-- mobile menu -->
+                        <nav id="mobile-menu" class="d-none">
+                            <ul>
+                                <li><a href="#">Home </a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Home style 1</a></li>
+                                        <li><a href="#">Home style 2</a>
                                             <ul class="submenu">
                                                 <li><a href="#">Home style 1</a></li>
                                                 <li><a href="#">Home style 2</a>
                                                     <ul class="submenu">
                                                         <li><a href="#">Home style 1</a></li>
-                                                        <li><a href="#">Home style 2</a>
-                                                            <ul class="submenu">
-                                                                <li><a href="#">Home style 1</a></li>
-                                                                <li><a href="#">Home style 2</a></li>
-                                                                <li><a href="#">Home style 3</a></li>
-                                                                <li><a href="#">Home style 4</a></li>
-                                                            </ul>
-                                                        </li>
+                                                        <li><a href="#">Home style 2</a></li>
                                                         <li><a href="#">Home style 3</a></li>
                                                         <li><a href="#">Home style 4</a></li>
                                                     </ul>
@@ -67,159 +160,164 @@
                                                 <li><a href="#">Home style 4</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="#">Feature <i class="fas fa-angle-down"></i></a>
-                                            <div class="mega-menu">
-                                                <ul class="mega-links">
-                                                    <span class="mega-title">Mega Menu Title</span>
-                                                    <li><a href="#">mega item 1</a></li>
-                                                    <li><a href="#">mega item 2</a></li>
-                                                    <li><a href="#">mega item 3</a></li>
-                                                    <li><a href="#">mega item 4</a></li>
-                                                    <li><a href="#">mega item 5</a></li>
-                                                </ul>
-                                                <ul class="mega-links">
-                                                        <span class="mega-title">Mega Menu Title</span>
-                                                    <li><a href="#">mega item 1</a></li>
-                                                    <li><a href="#">mega item 2</a></li>
-                                                    <li><a href="#">mega item 3</a></li>
-                                                    <li><a href="#">mega item 4</a></li>
-                                                    <li><a href="#">mega item 5</a></li>
-                                                </ul>
-                                                <ul class="mega-links">
-                                                        <span class="mega-title">Mega Menu Title</span>
-                                                    <li><a href="#">mega item 1</a></li>
-                                                    <li><a href="#">mega item 2</a></li>
-                                                    <li><a href="#">mega item 3</a></li>
-                                                    <li><a href="#">mega item 4</a></li>
-                                                    <li><a href="#">mega item 5</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="static"><a href="#">Blogs <i class="fas fa-angle-down"></i></a>
-                                        
-                                            <div class="mega-menu full-mega">
-                                                    <ul class="mega-links">
-                                                        <span class="mega-title">Mega Menu Title</span>
-                                                        <li><a href="#">mega item 1</a></li>
-                                                        <li><a href="#">mega item 2</a></li>
-                                                        <li><a href="#">mega item 3</a></li>
-                                                        <li><a href="#">mega item 4</a></li>
-                                                        <li><a href="#">mega item 5</a></li>
-                                                    </ul>
-                                                    <ul class="mega-links">
-                                                            <span class="mega-title">Mega Menu Title</span>
-                                                        <li><a href="#">mega item 1</a></li>
-                                                        <li><a href="#">mega item 2</a></li>
-                                                        <li><a href="#">mega item 3</a></li>
-                                                        <li><a href="#">mega item 4</a></li>
-                                                        <li><a href="#">mega item 5</a></li>
-                                                    </ul>
-                                                    <ul class="mega-links">
-                                                            <span class="mega-title">Mega Menu Title</span>
-                                                        <li><a href="#">mega item 1</a></li>
-                                                        <li><a href="#">mega item 2</a></li>
-                                                        <li><a href="#">mega item 3</a></li>
-                                                        <li><a href="#">mega item 4</a></li>
-                                                        <li><a href="#">mega item 5</a></li>
-                                                    </ul>
-                                                    <ul class="mega-links">
-                                                            <span class="mega-title">Mega Menu Title</span>
-                                                        <li><a href="#">mega item 1</a></li>
-                                                        <li><a href="#">mega item 2</a></li>
-                                                        <li><a href="#">mega item 3</a></li>
-                                                        <li><a href="#">mega item 4</a></li>
-                                                        <li><a href="#">mega item 5</a></li>
-                                                    </ul>
-                                                </div>
-
-                                        </li>
-                                        <li><a href="#"> About Us</a></li>
+                                        <li><a href="#">Home style 3</a></li>
+                                        <li><a href="#">Home style 4</a></li>
                                     </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-xl-2">
-                            <div class="logo text-center">
-                                <a href="index.html"><img src="img/logo/logo.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-xl-5">
-                            <div class="header-right text-right">
-                                <ul>
-                                    <li><a href="#">Login</a></li>
-                                    <li><a href="#"><i class="fas fa-heart"></i> (0) </a></li>
-                                    <li><a href="#">Cart (3)</a>
-                                        <ul class="minicart">
-                                            <li>
-                                                <div class="cart-img">
-                                                    <a href="#"><img src="img/min_cart/2.jpg" alt=""></a>
-                                                </div>
-                                                <div class="cart-content">
-                                                    <h3><a href="#">Water Repellent Parka</a></h3>
-                                                    <div class="cart-price">
-                                                        <span class="new">$ 229.9</span>
-                                                        <span><del>  $239.9</del></span>
-                                                    </div>
-                                                </div>
-                                                <div class="del-icon">
-                                                    <a href="#"><i class="fas fa-trash"></i></a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="cart-img">
-                                                    <a href="#"><img src="img/min_cart/2.jpg" alt=""></a>
-                                                </div>
-                                                <div class="cart-content">
-                                                    <h3><a href="#">Water Repellent Parka</a></h3>
-                                                    <div class="cart-price">
-                                                        <span class="new">$ 229.9</span>
-                                                        <span><del>  $239.9</del></span>
-                                                    </div>
-                                                </div>
-                                                <div class="del-icon">
-                                                    <a href="#"><i class="fas fa-trash"></i></a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="cart-img">
-                                                    <a href="#"><img src="img/min_cart/2.jpg" alt=""></a>
-                                                </div>
-                                                <div class="cart-content">
-                                                    <h3><a href="#">Water Repellent Parka</a></h3>
-                                                    <div class="cart-price">
-                                                        <span class="new">$ 229.9</span>
-                                                        <span><del>  $239.9</del></span>
-                                                    </div>
-                                                </div>
-                                                <div class="del-icon">
-                                                    <a href="#"><i class="fas fa-trash"></i></a>
-                                                </div>
-                                            </li>
-                                            <div class="minicart-footer">
-                                                <div class="total-price">
-                                                    <span class="f-left">Total :</span>
-                                                    <span class="f-right">$600.0</span>
-                                                </div>
-                                                <div class="minicart-btn">
-                                                    <a class="btn" href="#">Check out</a>
-                                                </div>
-                                            </div>
+                                </li>
+                                <li><a href="#">Feature </a>
+                                    <div class="mega-menu">
+                                        <ul class="mega-links">
+                                            <span class="mega-title">Mega Menu Title</span>
+                                            <li><a href="#">mega item 1</a></li>
+                                            <li><a href="#">mega item 2</a></li>
+                                            <li><a href="#">mega item 3</a></li>
+                                            <li><a href="#">mega item 4</a></li>
+                                            <li><a href="#">mega item 5</a></li>
                                         </ul>
-                                    </li>
-                                    <li class="search-icon"><a href="#"><i class="fas fa-search"></i></a>
-                                        <form class="search-form" action="#">
-                                            <div class="search-box">
-                                                <input type="text" placeholder="Search">
-                                                <button type="submit"><i class="fas fa-search"></i></button>
-                                            </div>
-                                        </form>
-                                    </li>
-                                </ul>
-                            </div>
+                                        <ul class="mega-links">
+                                            <span class="mega-title">Mega Menu Title</span>
+                                            <li><a href="#">mega item 1</a></li>
+                                            <li><a href="#">mega item 2</a></li>
+                                            <li><a href="#">mega item 3</a></li>
+                                            <li><a href="#">mega item 4</a></li>
+                                            <li><a href="#">mega item 5</a></li>
+                                        </ul>
+                                        <ul class="mega-links">
+                                            <span class="mega-title">Mega Menu Title</span>
+                                            <li><a href="#">mega item 1</a></li>
+                                            <li><a href="#">mega item 2</a></li>
+                                            <li><a href="#">mega item 3</a></li>
+                                            <li><a href="#">mega item 4</a></li>
+                                            <li><a href="#">mega item 5</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="static"><a href="#">Blogs</a>
+
+                                    <div class="mega-menu full-mega">
+                                        <ul class="mega-links">
+                                            <span class="mega-title">Mega Menu Title</span>
+                                            <li><a href="#">mega item 1</a></li>
+                                            <li><a href="#">mega item 2</a></li>
+                                            <li><a href="#">mega item 3</a></li>
+                                            <li><a href="#">mega item 4</a></li>
+                                            <li><a href="#">mega item 5</a></li>
+                                        </ul>
+                                        <ul class="mega-links">
+                                            <span class="mega-title">Mega Menu Title</span>
+                                            <li><a href="#">mega item 1</a></li>
+                                            <li><a href="#">mega item 2</a></li>
+                                            <li><a href="#">mega item 3</a></li>
+                                            <li><a href="#">mega item 4</a></li>
+                                            <li><a href="#">mega item 5</a></li>
+                                        </ul>
+                                        <ul class="mega-links">
+                                            <span class="mega-title">Mega Menu Title</span>
+                                            <li><a href="#">mega item 1</a></li>
+                                            <li><a href="#">mega item 2</a></li>
+                                            <li><a href="#">mega item 3</a></li>
+                                            <li><a href="#">mega item 4</a></li>
+                                            <li><a href="#">mega item 5</a></li>
+                                        </ul>
+                                        <ul class="mega-links">
+                                            <span class="mega-title">Mega Menu Title</span>
+                                            <li><a href="#">mega item 1</a></li>
+                                            <li><a href="#">mega item 2</a></li>
+                                            <li><a href="#">mega item 3</a></li>
+                                            <li><a href="#">mega item 4</a></li>
+                                            <li><a href="#">mega item 5</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#"> About Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xl-2 col-12">
+                        <div class="logo text-xl-center text-center text-md-center">
+                            <a href="index.html"><img src="img/logo/logo.png" alt=""></a>
                         </div>
                     </div>
+                    <div class="col-xl-5 col-12">
+                        <div class="header-right text-right">
+                            <ul>
+                                <li><a class="d-none d-xl-block" href="#">Login</a></li>
+                                <li><a class="d-xl-none d-block" href="#"><i class="fas fa-user"></i></a></li>
+                                <li><a href="#"><i class="fas fa-heart"></i> (0) </a></li>
+                                <li><a href="#">Cart (3)</a>
+                                    <ul class="minicart">
+                                        <li>
+                                            <div class="cart-img">
+                                                <a href="#"><img src="img/min_cart/2.jpg" alt=""></a>
+                                            </div>
+                                            <div class="cart-content">
+                                                <h3><a href="#">Water Repellent Parka</a></h3>
+                                                <div class="cart-price">
+                                                    <span class="new">$ 229.9</span>
+                                                    <span><del> $239.9</del></span>
+                                                </div>
+                                            </div>
+                                            <div class="del-icon">
+                                                <a href="#"><i class="fas fa-trash"></i></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="cart-img">
+                                                <a href="#"><img src="img/min_cart/2.jpg" alt=""></a>
+                                            </div>
+                                            <div class="cart-content">
+                                                <h3><a href="#">Water Repellent Parka</a></h3>
+                                                <div class="cart-price">
+                                                    <span class="new">$ 229.9</span>
+                                                    <span><del> $239.9</del></span>
+                                                </div>
+                                            </div>
+                                            <div class="del-icon">
+                                                <a href="#"><i class="fas fa-trash"></i></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="cart-img">
+                                                <a href="#"><img src="img/min_cart/2.jpg" alt=""></a>
+                                            </div>
+                                            <div class="cart-content">
+                                                <h3><a href="#">Water Repellent Parka</a></h3>
+                                                <div class="cart-price">
+                                                    <span class="new">$ 229.9</span>
+                                                    <span><del> $239.9</del></span>
+                                                </div>
+                                            </div>
+                                            <div class="del-icon">
+                                                <a href="#"><i class="fas fa-trash"></i></a>
+                                            </div>
+                                        </li>
+                                        <div class="minicart-footer">
+                                            <div class="total-price">
+                                                <span class="f-left">Total :</span>
+                                                <span class="f-right">$600.0</span>
+                                            </div>
+                                            <div class="minicart-btn">
+                                                <a class="btn" href="#">Check out</a>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="search-icon"><a href="#"><i class="fas fa-search"></i></a>
+                                    <form class="search-form" action="#">
+                                        <div class="search-box">
+                                            <input type="text" placeholder="Search">
+                                            <button type="submit"><i class="fas fa-search"></i></button>
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- mobile menu div -->
+                    <div class="col-md-12 mobile-menu"></div>
                 </div>
-            </section>
+            </div>
+        </section>
         <!-- menu section end -->
     </header>
     <!-- header end -->
@@ -252,41 +350,48 @@
                 </div>
             </div>
         </section>
-         <!-- slider area end -->
+        <!-- slider area end -->
 
-         <!-- product area start -->
-         <section class="product-area pt-75 pb-45">
+        <!-- product area start -->
+        <section class="product-area pt-75 pb-45">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="product-tab">
                             <ul class="nav mb-50" id="myTab" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link" id="furniture-tab" data-toggle="tab" href="#furniture" role="tab" aria-controls="furniture" aria-selected="true">Furniture</a>
+                                    <a class="nav-link" id="furniture-tab" data-toggle="tab" href="#furniture"
+                                        role="tab" aria-controls="furniture" aria-selected="true">Furniture</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="lighting-tab" data-toggle="tab" href="#lighting" role="tab" aria-controls="lighting" aria-selected="false">Lighting</a>
+                                    <a class="nav-link" id="lighting-tab" data-toggle="tab" href="#lighting" role="tab"
+                                        aria-controls="lighting" aria-selected="false">Lighting</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="sofas-tab" data-toggle="tab" href="#sofas" role="tab" aria-controls="sofas" aria-selected="false">Sofas</a>
+                                    <a class="nav-link" id="sofas-tab" data-toggle="tab" href="#sofas" role="tab"
+                                        aria-controls="sofas" aria-selected="false">Sofas</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="chairs-tab" data-toggle="tab" href="#chairs" role="tab" aria-controls="chairs" aria-selected="false">Lounge Chairs</a>
+                                    <a class="nav-link" id="chairs-tab" data-toggle="tab" href="#chairs" role="tab"
+                                        aria-controls="chairs" aria-selected="false">Lounge Chairs</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="false">All</a>
+                                    <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab"
+                                        aria-controls="all" aria-selected="false">All</a>
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="furniture" role="tabpanel" aria-labelledby="furniture-tab">
+                                <div class="tab-pane fade show active" id="furniture" role="tabpanel"
+                                    aria-labelledby="furniture-tab">
 
                                     <div class="product-active owl-carousel">
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
                                                 <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
-                                                    
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
+
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -317,7 +422,8 @@
                                             <div class="product-img">
                                                 <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -348,7 +454,8 @@
                                             <div class="product-img">
                                                 <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -379,39 +486,9 @@
                                             <div class="product-img">
                                                 <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
-                                                <span>Hot</span>
-                                                <div class="product-action">
-                                                    <a href="#"><i class="fas fa-eye"></i></a>
-                                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                                                    <a href="#"><i class="far fa-heart"></i></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-content text-center">
-                                                <h2><a href="#">Water Repellent Parka</a></h2>
-                                                <div class="rating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <div class="price">
-                                                    <span class="new">$ 229.9</span>
-                                                    <span class="old"><del>$239.9</del></span>
-                                                    <div class="cart">
-                                                        <a href="#">Add to cart</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-wrapper mb-30">
-                                            <div class="product-img">
-                                                    <a href="#">
-                                                        <img src="img/products/product1.jpg" alt="">
-                                                        <img class="secondary-product" src="img/products/product2.jpg" alt="">
-                                                    </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
                                                     <a href="#"><i class="fas fa-eye"></i></a>
@@ -441,7 +518,8 @@
                                             <div class="product-img">
                                                 <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -470,9 +548,42 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
+                                                </a>
+                                                <span>Hot</span>
+                                                <div class="product-action">
+                                                    <a href="#"><i class="fas fa-eye"></i></a>
+                                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                                    <a href="#"><i class="far fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="product-content text-center">
+                                                <h2><a href="#">Water Repellent Parka</a></h2>
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="price">
+                                                    <span class="new">$ 229.9</span>
+                                                    <span class="old"><del>$239.9</del></span>
+                                                    <div class="cart">
+                                                        <a href="#">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-wrapper mb-30">
+                                            <div class="product-img">
+                                                <a href="#">
+                                                    <img src="img/products/product1.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -507,9 +618,10 @@
                                     <div class="product-active owl-carousel">
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -538,9 +650,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -569,9 +682,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -600,9 +714,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -631,9 +746,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -662,9 +778,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -693,9 +810,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -785,9 +903,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -816,9 +935,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -847,9 +967,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -878,9 +999,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -909,9 +1031,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1002,9 +1125,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1033,9 +1157,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1064,9 +1189,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1095,9 +1221,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1126,9 +1253,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1219,9 +1347,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1250,9 +1379,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1281,9 +1411,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1312,9 +1443,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1343,9 +1475,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1379,10 +1512,10 @@
                     </div>
                 </div>
             </div>
-         </section>
-         <!-- product area end -->
+        </section>
+        <!-- product area end -->
 
-         <!-- cta area start -->
+        <!-- cta area start -->
         <section class="cta-area pt-75 pb-75">
             <div class="container">
                 <div class="row">
@@ -1394,38 +1527,44 @@
                 </div>
             </div>
         </section>
-         <!-- cta area end -->
+        <!-- cta area end -->
 
-          <!-- product area start -->
-          <section class="product-area pt-75 pb-45">
+        <!-- product area start -->
+        <section class="product-area pt-75 pb-45">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="product-tab">
                             <ul class="nav mb-50" id="myTab" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link" id="newarrival-tab" data-toggle="tab" href="#newarrival" role="tab" aria-controls="newarrival" aria-selected="true">New arrival</a>
+                                    <a class="nav-link" id="newarrival-tab" data-toggle="tab" href="#newarrival"
+                                        role="tab" aria-controls="newarrival" aria-selected="true">New arrival</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="featured-tab" data-toggle="tab" href="#featured" role="tab" aria-controls="featured" aria-selected="false">Featured</a>
+                                    <a class="nav-link" id="featured-tab" data-toggle="tab" href="#featured" role="tab"
+                                        aria-controls="featured" aria-selected="false">Featured</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="bestseller-tab" data-toggle="tab" href="#bestseller" role="tab" aria-controls="bestseller" aria-selected="false">Bestseller</a>
+                                    <a class="nav-link" id="bestseller-tab" data-toggle="tab" href="#bestseller"
+                                        role="tab" aria-controls="bestseller" aria-selected="false">Bestseller</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="hot-tab" data-toggle="tab" href="#hot" role="tab" aria-controls="hot" aria-selected="false">Hot</a>
+                                    <a class="nav-link" id="hot-tab" data-toggle="tab" href="#hot" role="tab"
+                                        aria-controls="hot" aria-selected="false">Hot</a>
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="newarrival" role="tabpanel" aria-labelledby="newarrival-tab">
+                                <div class="tab-pane fade show active" id="newarrival" role="tabpanel"
+                                    aria-labelledby="newarrival-tab">
 
                                     <div class="product-active owl-carousel">
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
                                                 <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
-                                                    
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
+
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1456,7 +1595,8 @@
                                             <div class="product-img">
                                                 <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1487,7 +1627,8 @@
                                             <div class="product-img">
                                                 <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1518,39 +1659,9 @@
                                             <div class="product-img">
                                                 <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
-                                                <span>Hot</span>
-                                                <div class="product-action">
-                                                    <a href="#"><i class="fas fa-eye"></i></a>
-                                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                                                    <a href="#"><i class="far fa-heart"></i></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-content text-center">
-                                                <h2><a href="#">Water Repellent Parka</a></h2>
-                                                <div class="rating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <div class="price">
-                                                    <span class="new">$ 229.9</span>
-                                                    <span class="old"><del>$239.9</del></span>
-                                                    <div class="cart">
-                                                        <a href="#">Add to cart</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-wrapper mb-30">
-                                            <div class="product-img">
-                                                    <a href="#">
-                                                        <img src="img/products/product1.jpg" alt="">
-                                                        <img class="secondary-product" src="img/products/product2.jpg" alt="">
-                                                    </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
                                                     <a href="#"><i class="fas fa-eye"></i></a>
@@ -1580,7 +1691,8 @@
                                             <div class="product-img">
                                                 <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1609,9 +1721,42 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
+                                                </a>
+                                                <span>Hot</span>
+                                                <div class="product-action">
+                                                    <a href="#"><i class="fas fa-eye"></i></a>
+                                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                                    <a href="#"><i class="far fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="product-content text-center">
+                                                <h2><a href="#">Water Repellent Parka</a></h2>
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="price">
+                                                    <span class="new">$ 229.9</span>
+                                                    <span class="old"><del>$239.9</del></span>
+                                                    <div class="cart">
+                                                        <a href="#">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-wrapper mb-30">
+                                            <div class="product-img">
+                                                <a href="#">
+                                                    <img src="img/products/product1.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1646,9 +1791,10 @@
                                     <div class="product-active owl-carousel">
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1677,9 +1823,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1708,9 +1855,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1739,9 +1887,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1770,9 +1919,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1801,9 +1951,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1832,9 +1983,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1864,7 +2016,8 @@
                                     </div>
                                 </div>
 
-                                <div class="tab-pane fade" id="bestseller" role="tabpanel" aria-labelledby="bestseller-tab">
+                                <div class="tab-pane fade" id="bestseller" role="tabpanel"
+                                    aria-labelledby="bestseller-tab">
                                     <div class="product-active owl-carousel">
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
@@ -1924,9 +2077,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1955,9 +2109,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -1986,9 +2141,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -2017,9 +2173,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -2048,9 +2205,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -2141,9 +2299,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -2172,9 +2331,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -2203,9 +2363,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -2234,9 +2395,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -2265,9 +2427,10 @@
                                         </div>
                                         <div class="product-wrapper mb-30">
                                             <div class="product-img">
-                                                 <a href="#">   
+                                                <a href="#">
                                                     <img src="img/products/product1.jpg" alt="">
-                                                    <img class="secondary-product" src="img/products/product2.jpg" alt="">
+                                                    <img class="secondary-product" src="img/products/product2.jpg"
+                                                        alt="">
                                                 </a>
                                                 <span>Hot</span>
                                                 <div class="product-action">
@@ -2301,15 +2464,15 @@
                     </div>
                 </div>
             </div>
-         </section>
-         <!-- product area end -->
+        </section>
+        <!-- product area end -->
 
-         <!-- newsletter area start -->
+        <!-- newsletter area start -->
 
-         <section class="newsletter-area mb-75 mt-75">
+        <section class="newsletter-area mb-75 mt-75">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6 offset-xl-3">
+                    <div class="col-xl-6 col-lg-8 offset-lg-2 offset-xl-3">
                         <div class="newsletter-wrapper">
                             <div class="section-heading text-center">
                                 <h4>KEEP UPDATED</h4>
@@ -2325,17 +2488,17 @@
                     </div>
                 </div>
             </div>
-         </section>
+        </section>
 
-         <!-- newsletter area end -->
+        <!-- newsletter area end -->
 
-         <!-- brand area start -->
+        <!-- brand area start -->
 
-         <section class="brand-area pt-75 pb-75">
-             <div class="container">
-                 <div class="row">
-                     <div class="col-12">
-                         <div class="brand-active owl-carousel">
+        <section class="brand-area pt-75 pb-75">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="brand-active owl-carousel">
                             <div class="brand-item">
                                 <a href="#"><img src="img/brands/1.png" alt=""></a>
                             </div>
@@ -2360,13 +2523,13 @@
                             <div class="brand-item">
                                 <a href="#"><img src="img/brands/4.png" alt=""></a>
                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-         <!-- brand area end -->
+        <!-- brand area end -->
 
 
     </main>
@@ -2375,7 +2538,7 @@
         <div class="footer-area pt-75 pb-110">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-3 mb-30">
+                    <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
                         <div class="footer-weiget">
                             <h5>About</h5>
                             <ul class="footer-links">
@@ -2387,7 +2550,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-3 mb-30">
+                    <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
                         <div class="footer-weiget">
                             <h5>Customer services</h5>
                             <ul class="footer-links">
@@ -2399,7 +2562,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-3 mb-30">
+                    <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
                         <div class="footer-weiget">
                             <h5>Furniture</h5>
                             <ul class="footer-links">
@@ -2411,7 +2574,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-3 mb-30">
+                    <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
                         <div class="footer-weiget">
                             <h5>Accessories</h5>
                             <ul class="footer-links">
@@ -2429,10 +2592,10 @@
 
         <div class="footer-bottom-area">
             <div class="container">
-                <div class="footer-border">            
+                <div class="footer-border">
                     <div class="row">
-                        <div class="col-xl-6">
-                            <div class="footer-menu">
+                        <div class="col-xl-6 col-lg-7 col-12">
+                            <div class="footer-menu text-left">
                                 <nav>
                                     <ul>
                                         <li><a href="#">About Us</a></li>
@@ -2444,7 +2607,7 @@
                                 </nav>
                             </div>
                         </div>
-                        <div class="col-xl-6">
+                        <div class="col-xl-6 col-lg-5 col-12">
                             <div class="footer-icon text-right pt-40 pb-40">
                                 <span>Connect with us:</span>
                                 <a href="#"><i class="fab fa-facebook"></i></a>

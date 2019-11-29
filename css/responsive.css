@@ -1,268 +1,200 @@
-/* Normal desktop :1200px. */
+/* Extra Large Device :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
-
-.header-section {
-    padding: 0 0;
+    .owl-carousel .owl-nav div {
+        right: 87px;
+    }
 }
 
-}
-
-
-/* Normal desktop :992px. */
+/* Large Device :992px. */
 @media (min-width: 992px) and (max-width: 1199px) {
-
-.pt-120{
-    padding-top: 90px;
-}
-
-.pb-120{
-    padding-bottom: 90px;
-}
-
-.header-section {
-    padding-bottom: 5px;
-    padding-top: 15px;
-    padding-right: 0;
-    padding-left: 0;
-}
-
-.section-title h2 {
-	font-size: 55px;
-}
-
-
-.about-description p:nth-child(2){
-    display: none;
-}
-
-.btn {
-	padding: 20px 30px;
-}
-
-
-.services-section row{
-    padding-top: 90px;
-}
-
-.single-service {
-	padding: 35px 30px;
-}
-
-
-.single-experience {
-	padding: 30px;
-}
-
-
-.experience-heading i {
-	height: 60px;
-	line-height: 60px;
-	width: 60px;
-}
-
-
-.experience-title span {
-	margin-bottom: 10px;
-}
-
-.experience-title {
-	margin-left: 15px;
-}
-.experience-title h4 {
-	font-size: 20px;
-}
-
-
-
-.team-description h4 {
-	font-size: 20px;
-}
-
-.team-description {
-	padding: 30px 25px;
-}
-
-.news-heading h3 {
-	font-size: 22px;
-}
-
-.meta-news ul li a {
-	margin-right: 15px;
-}
-
-.footer-section{
-    padding-top: 90px;
-}
-
-
-.weiget-description span {
-	font-size: 16px;
-}
-
-
-}
-
- 
-/* Tablet desktop :768px. */
-@media (min-width: 768px) and (max-width: 991px) {
-
-    .header-section {
-        padding-bottom: 5px;
-        padding-top: 15px;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-
     .single-slider {
-        min-height: 740px;
-        background-position: top left;
+        background-size: cover;
+        background-position: center center;
+    }
+    .slider-text {
+        padding-left: 60px;
+    }
+    .product-active.owl-carousel .owl-nav div {
+        top: -17%;
+    }
+    .mean-container a.meanmenu-reveal {
+        top: -26px;
+        left: 0;
     }
 
-    .section-title h2 {
-        font-size: 60px;
-    }
-
-    .about-title h2 span {
-        padding-right: 0;
-    }
-
-    .section-title h2 span{
-        display: block;
-    }
-
-    .experience-title {
-        margin-left: 10px;
-    }
-
-    .team-img img {
-        width: 100%;
-    }
-
-    .footer-weiget-right h2 {
-        font-size: 27px;
-    }
-
-    .weiget-description span {
-        display: block;
+    .logo {
+        padding-top: 20px;
     }
 
 }
-
  
-/* small mobile :320px. */
+/* Medium Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .logo {
+        padding-top: 20px;
+    }
+    .slider-text h1 {
+        font-size: 25px;
+    }
+    .single-slider {
+        min-height: 500px;
+    }
+
+
+    .product-tab ul li {
+        margin-right: 35px;
+    }
+
+    .product-tab ul li a {
+        font-size: 14px;
+    }
+
+    .slider-text p {
+        margin-bottom: 20px;
+    }
+
+    .slider-text {
+        padding-left: 50px;
+    }
+
+    .mean-container a.meanmenu-reveal {
+        top: -26px;
+        left: 0;
+    }
+
+    .footer-icon.pt-40{
+        padding-top: 0;
+    }
+
+    .pt-75{
+        padding-top: 45px;
+    }
+
+    .pb-75{
+        padding-bottom: 45px;
+    }
+
+    .mb-75{
+        margin-bottom: 45px;
+    }
+    .mt-75{
+        margin-top: 45px;
+    }
+    .pb-110{
+        padding-bottom: 70px;
+    }
+
+    .footer-menu.text-left{
+        text-align: center!important;
+    }
+    .footer-icon.text-right{
+        text-align: center!important;
+    }
+}
+ 
+/* Small Device :320px. */
 @media (max-width: 767px) {
 
-    .header-section {
-        padding-bottom: 5px;
-        padding-top: 15px;
-        padding-right: 10px;
-        padding-left: 10px;
+    .logo {
+        padding-top: 20px;
     }
-    
+
     .single-slider {
-        min-height: 700px;
-        background-position: top left;
+        background-size: cover;
+    }
+    .slider-text {
+        padding-left: 30px;
+    }
+    .mean-container a.meanmenu-reveal {
+        top: -26px;
+        left: 0;
     }
 
-    .slider-content h2 {
-        font-size: 40px;
+    .product-active.owl-carousel .owl-nav div {
+        top: -6%;
     }
 
-    .video-btn {
-        margin-left: 0;
-        display: block;
-    }
-    
-    .slider-btn {
-        text-align: center;
-    }
-
-    .section-title h2 {
-        font-size: 40px;
-    }
-
-    .about-title h2 span {
-        padding-right: 0;
-    }
-
-    .section-title h2 span{
-        display: block;
-    }
-
-    .experience-title {
-        margin-left: 20px;
-    }
-
-    .team-img img {
-        width: 100%;
-    }
-
-    .footer-weiget-right h2 {
-        font-size: 27px;
-    }
-
-    .weiget-description span {
-        display: block;
-    }
-
-     .btn {
-        margin-bottom: 30px;
-        padding: 20px 40px;
-    }
-    
-    .about-btn {
-        text-align: center;
-    }
-    
-    .about-btn .btn-second {
-        margin-left: 0;
-    }
-
-    .service-heading h3 {
-        line-height: 1.4;
-    }
-    
-    .single-service {
-        padding: 35px 30px;
-    }
-    
-    .service-icon {
-        text-align: center;
-    }
-    
-    .service-heading {
-        text-align: center;
-    }
-        
-    .single-experience {
-        padding: 30px;
-    }
-
-    .team-description {
-        padding: 30px 25px;
-    }
-
-    .map {
-        padding-left: 0;
-    }
-
-    .owl-carousel .owl-nav div {
-        right: 40px;
-        top: -150px;
-    }
-
-    .testimonials-wrapper {
-        margin: 0 15px;
-    }
-
-    .owl-nav i {
+    .slider-text h1 {
         font-size: 25px;
     }
 
-    .news-heading h3 {
-        font-size: 18px;
+    .single-slider {
+        min-height: 500px;
     }
 
+    .product-tab ul li {
+        margin-right: 35px;
+    }
+
+    .product-tab ul li a {
+        font-size: 14px;
+    }
+
+    .slider-text p {
+        margin-bottom: 20px;
+    }
+
+    .footer-icon.pt-40{
+        padding-top: 40;
+    }
+
+    .pt-75{
+        padding-top: 45px;
+    }
+
+    .pb-75{
+        padding-bottom: 45px;
+    }
+
+    .mb-75{
+        margin-bottom: 45px;
+    }
+    .mt-75{
+        margin-top: 45px;
+    }
+    .pb-110{
+        padding-bottom: 50px;
+    }
+    
+    .footer-menu.text-left{
+        text-align: center!important;
+    }
+    .footer-icon.text-right{
+        text-align: center!important;
+    }
+
+    .footer-menu ul li {
+        margin-right: 20px;
+    }
+
+    .header-right ul li ul.minicart {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .search-box input {
+        width: 315px;
+    }
+
+    .product-tab ul li {
+        margin-right: 20px;
+        margin-bottom: 15px;
+    }
+
+    .newsletter input[type="email"] {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .newsletter .btn {
+        width: 100%;
+    }
+
+    .footer-menu ul li a {
+        padding-bottom: 0;
+        padding-top: 40px;
+    }
+  
 }
  
 /* Large Mobile :480px. */

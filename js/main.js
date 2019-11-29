@@ -28,7 +28,7 @@
 
 	$(window).on('scroll', function () {
 		var scroll = $(window).scrollTop();
-		if (scroll < 245) {
+		if (scroll < 500) {
 			$(".header-sticky").removeClass("sticky");
 		} else {
 			$(".header-sticky").addClass("sticky");
@@ -51,6 +51,20 @@
 		loop: true,
 		navText: ['Back', 'Next'],
 		nav: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			550: {
+				items: 2
+			},
+			992: {
+				items: 3
+			},
+			1200: {
+				items: 4
+			}
+		}
 	})
 
 
@@ -121,12 +135,12 @@
 				items: 1
 			},
 			550: {
-				items: 2
+				items: 3
 			},
-			767: {
-				items: 4
+			992: {
+				items: 5
 			},
-			1000: {
+			1200: {
 				items: 6
 			}
 		}

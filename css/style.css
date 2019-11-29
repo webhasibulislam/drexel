@@ -1,23 +1,31 @@
 /*
   Theme Name: Drexel - E-commerce HTML Template
   Author: hasibul.contact@gmail.com
-  Support: support.drexel@gmail.com
+  Support: support.author@gmail.com
   Description: Creative  HTML5 template.
   Version: 1.0
+  
 */
 
 /* CSS Index
 -----------------------------------
 1. Theme default css
 2. header
-3. slider
-4. about-section
-5. features-box
-6. department
-7. team
-8. video-section
-9. counter
-10. footer
+3. submenu
+4. mega menu
+5. full width mega menu
+6. sticky nav
+7. header right
+8. minicart
+9. search
+10. slider
+11. product
+12. cta banner
+13. newsletter
+14. section heading
+15. brand
+16. footer
+17. footer bottom menu
 */
 
 /* 1. Theme default css */
@@ -301,8 +309,8 @@ label {
 
   /* preloder */
 
-#loading{
-	background-color: #bd4932;
+  #loading{
+	background-color: #222222;
 	height: 100%;
 	width: 100%;
 	position: fixed;
@@ -319,43 +327,91 @@ label {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	height: 200px;
-	width: 200px;
-	margin-top: -100px;
-	margin-left: -100px;
+	height: 150px;
+	width: 150px;
+	margin-top: -75px;
+	margin-left: -75px;
 }
-#object{
-	width: 80px;
-	height: 80px;
+.object{
+	width: 20px;
+	height: 20px;
 	background-color: #FFF;
-	-webkit-animation: animate 1s infinite ease-in-out;
-	animation: animate 1s infinite ease-in-out;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 60px;
-}
-@-webkit-keyframes animate {
-  0% { -webkit-transform: perspective(160px); }
-  50% { -webkit-transform: perspective(160px) rotateY(-180deg); }
-  100% { -webkit-transform: perspective(160px) rotateY(-180deg) rotateX(-180deg); }
+	float: left;
+	margin-right: 20px;
+	margin-top: 65px;
+	-moz-border-radius: 50% 50% 50% 50%;
+	-webkit-border-radius: 50% 50% 50% 50%;
+	border-radius: 50% 50% 50% 50%;
 }
 
-@keyframes animate {
-  0% { 
-    transform: perspective(160px) rotateX(0deg) rotateY(0deg);
-    -webkit-transform: perspective(160px) rotateX(0deg) rotateY(0deg); 
-  } 50% { 
-    transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
-    -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(0deg) ;
-  } 100% { 
-    transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
-    -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+#object_one {	
+	-webkit-animation: object_one 1.5s infinite;
+	animation: object_one 1.5s infinite;
+	}
+#object_two {
+	-webkit-animation: object_two 1.5s infinite;
+	animation: object_two 1.5s infinite;
+	-webkit-animation-delay: 0.25s; 
+    animation-delay: 0.25s;
+	}
+#object_three {
+    -webkit-animation: object_three 1.5s infinite;
+	animation: object_three 1.5s infinite;
+	-webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+	
+	}
+
+	
+@-webkit-keyframes object_one {
+	
+	75% { -webkit-transform: scale(0); }
+
+}
+
+@keyframes object_one {
+
+  75% { 
+    transform: scale(0);
+    -webkit-transform: scale(0);
   }
+
+}
+
+@-webkit-keyframes object_two {
+
+  75% { -webkit-transform: scale(0); }
+
+}
+
+@keyframes object_two {
+
+  75% { 
+    transform: scale(0);
+    -webkit-transform:  scale(0);
+  }
+
+}
+
+@-webkit-keyframes object_three {
+
+  75% { -webkit-transform: scale(0); }
+
+}
+
+@keyframes object_three {
+
+  75% { 
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+
 }
 
 /* header */
+
 .header-section {
-	min-height: 170px;
+	min-height: 150px;
 }
 .main-menu ul li {
 	display: inline-block;
@@ -562,6 +618,17 @@ label {
 	width: 25%;
 }
 
+/* sticky nav */
+.header-section.sticky{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	z-index: 99;
+	min-height: auto;
+}
+
 /* header right */
 
 .header-right ul{
@@ -580,39 +647,8 @@ label {
 	text-transform: uppercase;
 }
 
-.header-right ul li ul.minicart {
-	background: #222222;
-	padding: 50px;
-	width: 385px;
-	position: absolute;
-	top: 110%;
-	right: 0%;
-	transition: 0.3s;
-	-webkit-transition: 0.3s;
-	-moz-transition: 0.3s;
-	-ms-transition: 0.3s;
-	-o-transition: 0.3s;
-	opacity: 0;
-	visibility: hidden;
-	z-index: 9;
-}
+/* minicart */
 
-.header-right ul li:hover ul.minicart {
-	opacity: 1;
-	visibility: visible;
-	top: 100%;
-}
-
-.header-right ul.minicart li{
-	padding: 0;
-	margin-bottom: 30px;
-}
-
-.header-right ul.minicart li:last-child{
-	margin-bottom: 0;
-}
-
-/* cart */
 .minicart {
 	text-align: left;
 }
@@ -647,6 +683,40 @@ ul.minicart li .cart-content a {
 .header-right ul.minicart li{
 	margin-left: 0;
 }
+
+
+.header-right ul li ul.minicart {
+	background: #222222;
+	padding: 50px;
+	width: 385px;
+	position: absolute;
+	top: 110%;
+	right: 0%;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 9;
+}
+
+.header-right ul li:hover ul.minicart {
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+
+.header-right ul.minicart li{
+	padding: 0;
+	margin-bottom: 30px;
+}
+
+.header-right ul.minicart li:last-child{
+	margin-bottom: 0;
+}
+
 
 
 .del-icon {
@@ -698,6 +768,7 @@ ul.minicart li .del-icon a:hover {
 }
 
 /* search */
+
 .search-icon{
 	position: relative;
 }
@@ -743,6 +814,7 @@ ul.minicart li .del-icon a:hover {
 }
 
 /* slider */
+
 .single-slider {
 	min-height: 630px;
 	background-repeat: no-repeat;
@@ -970,6 +1042,10 @@ ul.minicart li .del-icon a:hover {
 }
 
 /* newsletter */
+
+.newsletter{
+	overflow: hidden;
+}
 .newsletter-area{
 	background: #f4f4f4;
 }
@@ -977,6 +1053,27 @@ ul.minicart li .del-icon a:hover {
 	padding: 150px 0;
 	background: #f4f4f4;
 }
+.newsletter input[type="email"] {
+	height: 45px;
+	width: 75%;
+	border: 1px solid #dddddd;
+	padding: 15px 20px;
+	font-size: 14px;
+	color: #222222;
+	background: #f4f4f4;
+	float: left;
+}
+.newsletter .btn {
+	padding: 15px 35px;
+	width: 25%;
+	float: left;
+}
+.newsletter .btn:hover {
+	background: #444444;
+	color: #fff;
+}
+
+/* section heading */
 
 .section-heading h4{
 	font-size: 30px;
@@ -996,22 +1093,7 @@ ul.minicart li .del-icon a:hover {
 	margin-bottom: 50px;
 	display: inline-block;
 }
-.newsletter input[type="email"] {
-	height: 45px;
-	width: 75%;
-	border: 1px solid #dddddd;
-	padding: 15px 20px;
-	font-size: 14px;
-	color: #222222;
-	background: #f4f4f4;
-}
-.newsletter .btn {
-	padding: 15px 35px;
-}
-.newsletter .btn:hover {
-	background: #444444;
-	color: #fff;
-}
+
 /* brand */
 .brand-active.owl-carousel .owl-item img {
 	width: inherit;
@@ -1037,6 +1119,7 @@ ul.minicart li .del-icon a:hover {
 }
 
 /* footer */
+
 .footer-area {
 	border-top: 1px solid #eeeeee;
 }
@@ -1101,6 +1184,7 @@ ul.footer-links li a:hover {
 }
 
 /* footer bottom menu */
+
 .footer-border {
 	border-top: 1px solid #eee;
 }
